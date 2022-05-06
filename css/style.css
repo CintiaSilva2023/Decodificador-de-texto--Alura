@@ -9,7 +9,8 @@ body {
     background-color: #f3f5fc;
     background-image: url(/img/05\ L.jpg);
     background-size: cover;
-    
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -103,9 +104,12 @@ body {
     text-decoration: underline;
 }
 
+.btn-copiar{
+    margin-top: 55px;
+}
 
 #copiar {
-    background-color: rgb(36, 57, 75);
+    background:linear-gradient(rgb(4, 4, 77),rgb(22, 166, 177));
     color: #fff;
     font-size: 30px;
     border: none;
@@ -137,8 +141,75 @@ footer p{
 
 .fa-brands{
     color: rgb(0, 183, 255);
-    margin-right: 20px;
+    margin-right: 50px;
     margin-top: 15px;
    
 }
 
+@media all and (min-width:375px)and (max-width: 767px){
+   html,body{
+    overflow-x: hidden;
+   }
+
+   body{
+    background-color: #f3f5fc;
+    background-image: url(/img/05\ L.jpg);
+    
+   
+   }
+
+   #logo{
+       margin-left: 125px;
+   }
+   
+    .main{
+        display: block;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .input-texto,.cx_mensagem{
+        width: 340px;
+    }
+
+    .informacao{
+        text-align: center;
+        margin-right: 30px;
+        
+    }
+
+    .botoes{
+        margin-left: 0px;
+        margin-bottom: 10px;
+        
+    }
+
+    .cx_mensagem{
+        margin: 0;
+        
+    }
+
+    .criptografar{
+        font-size: 18px; 
+        height: 40px;
+    }
+
+    .descriptografar{
+        width: 155px;
+        font-size: 18px;
+        height: 40px;
+    }
+
+
+    #copiar{
+       margin: 0;
+       margin-left: 120px;
+    }
+
+    footer p{
+       font-size: 16px; 
+       
+    }
+
+    
+}
